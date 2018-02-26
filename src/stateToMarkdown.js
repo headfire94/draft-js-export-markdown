@@ -118,6 +118,7 @@ class MarkupGenerator {
         this.output.push(' > ' + this.renderBlockContent(block) + '\n');
         break;
       }
+      case 'code-block':
       case 'code': {
         this.insertLineBreaks(1);
         const blockData = block.getData();
